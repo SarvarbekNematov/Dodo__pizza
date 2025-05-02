@@ -1,0 +1,9 @@
+.navigation__list {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 10px;
+  scrollbar-width: none;
+  display: flex;
+  justify-content: left;
+}
