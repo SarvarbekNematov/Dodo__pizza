@@ -5,7 +5,19 @@ import "./head.css";
 import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "../ui/sheet";
 import Link from "next/link";
 import { DialogTitle } from "@radix-ui/react-dialog";
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTrigger } from "../ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTrigger,
+} from "../ui/dialog";
+import {
+  InputOTP,
+  InputOTPGroup,
+  InputOTPSeparator,
+  InputOTPSlot,
+} from "../ui/input-otp";
 
 const Header = () => {
   return (
@@ -76,22 +88,42 @@ const Header = () => {
                     </li>
                     <li>
                       <Dialog>
-                        <DialogTrigger asChild className="border-1 px-[12px] py-[4px] rounded-[12px]"><Button>Log in</Button></DialogTrigger>
+                        <DialogTrigger
+                          asChild
+                          className="border-1 px-[12px] py-[4px] rounded-[12px]"
+                        >
+                          <Button>Log in</Button>
+                        </DialogTrigger>
                         <DialogContent>
                           <DialogHeader>
                             <DialogTitle>Kodni Kiriting</DialogTitle>
-                            <DialogDescription>
-                              <a href="https://t.me/dodaPizzaBot">Dodo pizza bot</a> telegram botiga kiring va 1 daqiqalik kodingizni kiriting
+                            <DialogDescription className="text-[#101010d0] leading-[18px]">
+                              <a
+                                className="text-black underline text-[16px]"
+                                href="https://t.me/dodaPizzaBot"
+                              >
+                                Dodo_pizza_bot
+                              </a>{" "}
+                              telegram botiga kiring va 1 daqiqalik kodingizni
+                              kiriting
                             </DialogDescription>
                           </DialogHeader>
                           <div>
-                            <div>
-
+                            <div className="flex justify-center">
+                              <InputOTP maxLength={6}>
+                                <InputOTPGroup className="flex gap-[10px]">
+                                  <InputOTPSlot index={0} className="rounded-[10px] h-[50px]"/>
+                                  <InputOTPSlot index={1} className="rounded-[10px] h-[50px]"/>
+                                  <InputOTPSlot index={2} className="rounded-[10px] h-[50px]"/>
+                                  <InputOTPSlot index={3} className="rounded-[10px] h-[50px]"/>
+                                  <InputOTPSlot index={4} className="rounded-[10px] h-[50px]"/>
+                                  <InputOTPSlot index={5} className="rounded-[10px] h-[50px]"/>
+                                </InputOTPGroup>
+                              </InputOTP>
                             </div>
                           </div>
                         </DialogContent>
                       </Dialog>
-                      
                     </li>
                   </ul>
                 </SheetHeader>
