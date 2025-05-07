@@ -7,3 +7,12 @@
   display: flex;
   justify-content: left;
 }
+
+.desctop__login{
+  padding: 8px 16px;
+  background-color: #f3f3f7;
+  border: 0px;
+  color: black;
+  border-radius: 9999px;
+  font-weight: 500;
+}
