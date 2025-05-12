@@ -11,28 +11,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-  
-
   return (
     <html lang="en">
       <body className={`antialiased p-[10px]`}>
-      <Providers>
-        <div className="hidden md:block">
-          <Top__header />
-        </div>
-        <div>
-          <Header />
-        </div>
-        <div className="">
-          <Navbar />
-        </div>
-        <div>
-          {children}
-        </div>
-        <div>
-          <Footer />
-        </div>
+        <Providers>
+          <div className="max-w-[1320px] mx-auto">
+            <div className="hidden md:block">
+              <Top__header />
+            </div>
+            <div>
+              <Header />
+            </div>
+            <div className="">
+              <Navbar />
+            </div>
+            <div>{children}</div>
+            <div>
+              <Footer />
+            </div>
+          </div>
         </Providers>
       </body>
     </html>

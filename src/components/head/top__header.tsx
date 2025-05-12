@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const Top__header = () => {
   return (
-    <div className="flex justify-between py-[12px] mx-auto max-w-[1200px] px-6 items-center" >
+    <div className="flex justify-between py-[12px] px-6 items-center" >
       <div>
         <Select>
           <SelectTrigger className="w-[180px]">

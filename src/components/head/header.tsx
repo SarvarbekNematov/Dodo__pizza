@@ -7,7 +7,7 @@ import Login from "./login";
 const Header = () => {
 
   return (
-    <div className="max-w-[1200px]">
+    <div className="">
       <div className="flex justify-between md:px-[10px]">
         <div className="flex gap-[40px]">
           <div className="w-[150px] h-[50px] md:w-[250px]">

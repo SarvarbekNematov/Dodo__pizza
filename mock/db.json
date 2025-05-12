@@ -63,13 +63,13 @@
     {
       "id": 2,
       "name": "Margarita",
-      "fixed__price": 50000,
+      "fixed__price": null,
       "vegetarian": true,
       "pepper": false,
       "description": "Extra mozzarella, tomato sauce, italian herbs",
       "dis_available_toppings": [{ "id": 1, "name": "tomatoes" }],
       "url": "https://media.dodostatic.net/image/r:292x292/11ee89722dc352ae93b8f7612073baf6.jpg",
-      "price": null,
+      "price": 49000,
       "variants": [
         {
           "id": 1,
@@ -507,12 +507,17 @@
       "name": "Bavarian lunchbox",
       "description": "Hot, hearty lunch with bavarian sausages, french fries and mustard sauce",
       "fixed__price": 35000,
+      "url": "https://media.dodostatic.net/image/r:292x292/0194f53f0ecb71a9b7f077b6772157da.jpg",
+      "price": null,
+      "vegetarian": false,
+      "dis_available_toppings": [],
+      "pepper": false,
       "variants": [
         {
           "id": 1,
           "size": "Big",
           "weight": null,
-          "price": null,
+          "price": 35000,
           "url": "https://media.dodostatic.net/image/r:292x292/0194f53f0ecb71a9b7f077b6772157da.jpg"
         }
       ]
@@ -522,6 +527,11 @@
       "name": "Baked fries",
       "description": "Fragrant baked with tomato sauce as a gift",
       "fixed__price": null,
+      "vegetarian": true,
+      "dis_available_toppings": [],
+      "pepper": false,
+      "url": "https://media.dodostatic.net/image/r:292x292/0195c2946c8a7974b167f872bc61a084.jpg",
+      "price": 19000,
       "variants": [
         {
           "id": 1,
@@ -544,12 +554,17 @@
       "name": "Dodster",
       "description": "Legendary hot appetizer with chicken, tomatoes, mozzarella, ranch sauce in a thin wheat tortilla",
       "fixed__price": 29000,
+      "url": "https://media.dodostatic.net/image/r:292x292/11eed74f9e684d30b1ac51e4eb470c07.jpg",
+      "price": null,
+      "vegetarian": false,
+      "dis_available_toppings": [],
+      "pepper": false,
       "variants": [
         {
           "id": 1,
           "size": "1 pc",
           "weight": null,
-          "price": null,
+          "price": 29000,
           "url": "https://media.dodostatic.net/image/r:292x292/11eed74f9e684d30b1ac51e4eb470c07.jpg"
         }
       ]
@@ -558,7 +573,12 @@
       "id": 4,
       "name": "Rustic potatoes",
       "description": "Oven baked potato wedges",
+      "url": "https://media.dodostatic.net/image/r:292x292/11ee7d628495deb78b19fc57bd43e6fe.jpg",
+      "price": 19000,
       "fixed__price": null,
+      "vegetarian": true,
+      "pepper": false,
+      "dis_available_toppings": [],
       "variants": [
         {
           "id": 1,
@@ -581,6 +601,11 @@
       "name": "Chicken strips",
       "description": "Juicy chicken fillet slices in crispy breading",
       "fixed__price": null,
+      "url": "https://media.dodostatic.net/image/r:292x292/11ef9836cbdbe54aa2b65ec43a889379.jpg",
+      "price": 19000,
+      "vegetarian": false,
+      "dis_available_toppings": [],
+      "pepper": false,
       "variants": [
         {
           "id": 1,
@@ -612,12 +637,15 @@
       "name": "Date rolls",
       "description": "Sweet rolls with dates and date syrup - a natural sugar substitute",
       "fixed__price": 39000,
+      "price": null,
+      "dis_available_toppings": [],
+      "url": "https://media.dodostatic.net/image/r:292x292/01953c3131a37605ad719c20456e1272.jpg",
       "variants": [
         {
           "id": 1,
           "size": "8 pcs",
           "weight": null,
-          "price": null,
+          "price": 39000,
           "url": "https://media.dodostatic.net/image/r:292x292/01953c3131a37605ad719c20456e1272.jpg"
         }
       ]
@@ -630,13 +658,465 @@
         { "id": 20, "name": "condensed milk", "price": 4000 }
       ],
       "fixed__price": 25000,
+      "price": null,
+      "url": "https://media.dodostatic.net/image/r:292x292/11ee7d629056303789db74be10720710.jpg",
       "variants": [
         {
           "id": 1,
           "size": "2 pcs",
           "weight": null,
-          "price": null,
+          "price": 25000,
           "url": "https://media.dodostatic.net/image/r:292x292/11ee7d629056303789db74be10720710.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Fondant",
+      "description": "Dessert with a crispy crust and melted chocolate filling",
+      "dis_available_toppings": [],
+      "fixed__price": 23000,
+      "price": null,
+      "url": "https://media.dodostatic.net/image/r:292x292/11ef82ef6ad7a43f8465d154054dd951.jpg",
+      "variants": [
+        {
+          "id": 1,
+          "size": "1 pcs",
+          "weight": 80,
+          "price": 23000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11ef82ef6ad7a43f8465d154054dd951.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Cookies",
+      "description": "Soft biscuits with pieces of dark chocolate. It goes perfectly with tea, coffee or cocoa.",
+      "dis_available_toppings": [],
+      "fixed__price": 12000,
+      "price": null,
+      "url": "https://media.dodostatic.net/image/r:292x292/11ef82e9a6a3f4f2ae15b73d3223e287.jpg",
+      "variants": [
+        {
+          "id": 1,
+          "size": "1 pcs",
+          "weight": null,
+          "price": 12000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11ee7d629056303789db74be10720710.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Salted Caramel Muffin",
+      "description": "Vanilla Cake with Salted Caramel",
+      "dis_available_toppings": [],
+      "fixed__price": 15000,
+      "price": null,
+      "url": "https://media.dodostatic.net/image/r:292x292/11ef818533e106f6a35a5704431d997f.jpg",
+      "variants": [
+        {
+          "id": 1,
+          "size": "1 pcs",
+          "weight": null,
+          "price": 15000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11ef818533e106f6a35a5704431d997f.jpg"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Triple Chocolate Muffin",
+      "description": "Dessert made from natural cocoa, delicate chocolate filling and cubes of white and milk chocolate",
+      "dis_available_toppings": [],
+      "fixed__price": 15000,
+      "price": null,
+      "url": "https://media.dodostatic.net/image/r:292x292/11ef818557170ed6b845ad5c16adf332.jpg",
+      "variants": [
+        {
+          "id": 1,
+          "size": "1 pcs",
+          "weight": 120,
+          "price": 15000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11ef818557170ed6b845ad5c16adf332.jpg"
+        }
+      ]
+    }
+  ],
+  "drinks": [
+    {
+      "id": 1,
+      "name": "Mango-passion fruit",
+      "description": "Tropical, juicy and refreshing lemonade with a pinch of lemon and mint",
+      "url": "https://media.dodostatic.net/image/r:292x292/01968fcbe5fc73c7b705c400ae1433b9.jpg",
+      "fixed__price": 19000,
+      "price": null,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "0.3 l",
+          "weight": null,
+          "price": 19000,
+          "url": "https://media.dodostatic.net/image/r:292x292/01968fcbe5fc73c7b705c400ae1433b9.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Mojito",
+      "description": "The freshness of mint and lemon is like a breath of coolness in the midst of the day. Light taste, understandable to everyone",
+      "url": "https://media.dodostatic.net/image/r:292x292/0196a5db3b23782a99b1105f64cc45d1.jpg",
+      "fixed__price": 19000,
+      "price": null,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "0.3 l",
+          "weight": null,
+          "price": 19000,
+          "url": "https://media.dodostatic.net/image/r:292x292/0196a5db3b23782a99b1105f64cc45d1.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Strawberry Mojito",
+      "description": "Like the first sip of summer - the bright taste of strawberry and lemon. Light, fizzy and very refreshing",
+      "url": "https://media.dodostatic.net/image/r:292x292/0196a5decc5b701689def73c4107b579.jpg",
+      "fixed__price": 19000,
+      "price": null,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "0.3 l",
+          "weight": null,
+          "price": 19000,
+          "url": "https://media.dodostatic.net/image/r:292x292/0196a5decc5b701689def73c4107b579.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Sparkling water",
+      "description": "",
+      "url": "https://media.dodostatic.net/image/r:292x292/0195a7e85623784d9289dae19fc4a463.jpg",
+      "fixed__price": 5000,
+      "price": null,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "0.5 l",
+          "weight": null,
+          "price": 5000,
+          "url": "https://media.dodostatic.net/image/r:292x292/0195a7e85623784d9289dae19fc4a463.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Pepsi",
+      "description": "",
+      "url": "https://media.dodostatic.net/image/r:292x292/01956f6a79b978c987fb078a81f2d6f7.jpg",
+      "fixed__price": null,
+      "price": 10000,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "0.5 l",
+          "weight": null,
+          "price": 10000,
+          "url": "https://media.dodostatic.net/image/r:292x292/01956f6a79b978c987fb078a81f2d6f7.jpg"
+        },
+        {
+          "id": 2,
+          "size": "1 l",
+          "weight": null,
+          "price": 14000,
+          "url": "https://media.dodostatic.net/image/r:292x292/01957b69233474c8996dbd226ae8053a.jpg"
+        }
+      ]
+    }
+  ],
+  "coffee": [
+    {
+      "id": 1,
+      "name": "Cocoa",
+      "description": "Hot cocoa with milk foam",
+      "url": "https://media.dodostatic.net/image/r:292x292/019422b5f36377ee9a2cedb96c4c2bcc.jpg",
+      "fixed__price": 18000,
+      "price": null,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "0.33 l",
+          "weight": 270,
+          "price": 18000,
+          "url": "https://media.dodostatic.net/image/r:292x292/019422b5f36377ee9a2cedb96c4c2bcc.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Cappuccino Coffee",
+      "description": "The king of coffee drinks is the classic cappuccino. For lovers of balanced coffee and milk flavor",
+      "url": "https://media.dodostatic.net/image/r:292x292/11eed75406e477269b8bfa893184fcb3.jpg",
+      "fixed__price": null,
+      "price": 18000,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "0.3 l",
+          "weight": 210,
+          "price": 18000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11eed75406e477269b8bfa893184fcb3.jpg"
+        },
+        {
+          "id": 2,
+          "size": "0.4 l",
+          "weight": 250,
+          "price": 21000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11eed7540891d52894e76d070fe0ef59.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Latte Coffee",
+      "description": "When you want a gentle milk foam, a classic latte comes to the rescue",
+      "url": "https://media.dodostatic.net/image/r:292x292/11eed75372e8d68aa7c0581a9d5a1e8a.jpg",
+      "fixed__price": null,
+      "price": 20000,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "0.3 l",
+          "weight": 280,
+          "price": 20000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11eed75372e8d68aa7c0581a9d5a1e8a.jpg"
+        },
+        {
+          "id": 2,
+          "size": "0.4 l",
+          "weight": 330,
+          "price": 25000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11eed75374b0f6e5acd60ba44c756bf0.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Americano Coffee",
+      "description": "A couple of sips of hot Americano, and you'll be ready to conquer this day",
+      "url": "https://media.dodostatic.net/image/r:292x292/11eed753a31605738842762af3268b84.jpg",
+      "fixed__price": null,
+      "price": 16000,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "0.3 l",
+          "weight": 330,
+          "price": 16000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11eed753a31605738842762af3268b84.jpg"
+        },
+        {
+          "id": 2,
+          "size": "0.4 l",
+          "weight": 380,
+          "price": 18000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11eed753a410821b8a34c6fd2dd1c9bf.jpg"
+        }
+      ]
+    }
+  ],
+  "milkshakes": [
+    {
+      "id": 1,
+      "name": "Banana Cocktail",
+      "description": "Milk, ice cream, banana puree",
+      "url": "https://media.dodostatic.net/image/r:292x292/11ef3abd429f5bc28ffc21122b80f082.jpg",
+      "fixed__price": 30000,
+      "price": null,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "0.3 l",
+          "weight": null,
+          "price": 30000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11ef3abd429f5bc28ffc21122b80f082.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Strawberry Cocktail",
+      "description": "Milk, ice cream, strawberry puree",
+      "url": "https://media.dodostatic.net/image/r:292x292/11ef3ac1e51385409f61d3272a1e01c3.jpg",
+      "fixed__price": 30000,
+      "price": null,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "0.3 l",
+          "weight": null,
+          "price": 30000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11ef3ac1e51385409f61d3272a1e01c3.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Milkshake with Oreo cookies",
+      "description": "How do cookies taste better? It's better to drink it! Try a milkshake with ice cream and crushed Oreo cookies",
+      "url": "https://media.dodostatic.net/image/r:292x292/11ee895e15e6de909d2674b17f7267f5.jpg",
+      "fixed__price": 36000,
+      "price": null,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "0.3 l",
+          "weight": null,
+          "price": 36000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11ee895e15e6de909d2674b17f7267f5.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Chocolate Milkshake",
+      "description": "It's a shock! Chocolate milkshake with cream ice cream and chocolate syrup",
+      "url": "https://media.dodostatic.net/image/r:292x292/11ee797069a2855bb6f84b3db7c466d7.jpg",
+      "fixed__price": 35000,
+      "price": null,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "0.3 l",
+          "weight": null,
+          "price": 35000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11ee797069a2855bb6f84b3db7c466d7.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Ice Cappuccino",
+      "description": "Cold coffee drink with ice cream, espresso and milk ",
+      "url": "https://media.dodostatic.net/image/r:292x292/11ee895ded3fc85c83fe6e97b49203c3.jpg",
+      "fixed__price": 35000,
+      "price": null,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "0.3 l",
+          "weight": null,
+          "price": 35000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11ee895ded3fc85c83fe6e97b49203c3.jpg"
+        }
+      ]
+    }
+  ],
+  "sauces": [
+    {
+      "id": 1,
+      "name": "Caesar sauce",
+      "description": "",
+      "url": "https://media.dodostatic.net/image/r:292x292/11ef9773c6d025318d703f76a9edeefd.jpg",
+      "fixed__price": 5000,
+      "price": null,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "1 pc",
+          "weight": null,
+          "price": 5000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11ef9773c6d025318d703f76a9edeefd.jpg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Tomato ketchup",
+      "description": "",
+      "url": "https://media.dodostatic.net/image/r:292x292/11ef9027df51298b82347168ac2addf1.jpg",
+      "fixed__price": 5000,
+      "price": null,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "1 pc",
+          "weight": null,
+          "price": 5000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11ef9027df51298b82347168ac2addf1.jpg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Cheese sauce",
+      "description": "",
+      "url": "https://media.dodostatic.net/image/r:292x292/11ef8f7f9bf8d9bdb9380941b22df9cc.jpg",
+      "fixed__price": 5000,
+      "price": null,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "1 pc",
+          "weight": null,
+          "price": 5000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11ef8f7f9bf8d9bdb9380941b22df9cc.jpg"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Garlic sauce",
+      "description": "",
+      "url": "https://media.dodostatic.net/image/r:292x292/11ef8b09b71eb29da994b8d106168121.jpg",
+      "fixed__price": 5000,
+      "price": null,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "1 pc",
+          "weight": null,
+          "price": 5000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11ef8b09b71eb29da994b8d106168121.jpg"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Barbecue sauce",
+      "description": "",
+      "url": "https://media.dodostatic.net/image/r:292x292/11ef8f7f66748cbb97328626dea4a1e3.jpg",
+      "fixed__price": 5000,
+      "price": null,
+      "dis_available_toppings": [],
+      "variants": [
+        {
+          "id": 1,
+          "size": "1 pc",
+          "weight": null,
+          "price": 5000,
+          "url": "https://media.dodostatic.net/image/r:292x292/11ef8f7f66748cbb97328626dea4a1e3.jpg"
         }
       ]
     }
