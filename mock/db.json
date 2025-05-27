@@ -12,51 +12,308 @@
       "dis_available_toppings": [],
       "variants": [
         {
-          "id": 1,
-          "size": 25,
+          "id": 5,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 25,
+          "price": 45000,
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/11ee897381fb744cad68c15797467945.jpg",
+          "createAt": "Wed May 14 2025 15:05:33 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:33 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 7,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 30,
           "price": 59000,
-          "available_doughs": [
-            { "id": 1, "name": "Thin", "image": "" },
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/11ee897382fe407eb533708a14b5d5bc.jpg",
+          "createAt": "Wed May 14 2025 15:05:50 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:50 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 8,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 35,
+          "price": 70000,
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/11ee897386668d30b54141f74a7a7e35.jpg",
+          "createAt": "Wed May 14 2025 15:05:56 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:56 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 6,
+          "type": "thin",
+          "weight": 120,
+          "sm": 35,
+          "price": 59000,
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/11ee897388a9334db76d014dde710c09.jpg",
+          "createAt": "Wed May 14 2025 15:05:41 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:41 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 9,
+          "type": "thin",
+          "weight": 120,
+          "sm": 30,
+          "price": 100,
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/11ee8973850f6b22b0c4794e47da3a18.jpg",
+          "createAt": "Wed May 14 2025 15:06:05 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:06:05 GMT+0500 (Uzbekistan Standard Time)"
+        }
+      ],
+      "toppings": [
+        {
+          "id": 1,
+          "name": "cheese",
+          "prices": [
             {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee897381fb744cad68c15797467945.jpg"
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
             }
-          ]
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611EA0840DB86284E",
+          "createAt": "2025-05-14T10:04:06.087Z",
+          "updateAt": "2025-05-14T10:04:06.087Z"
         },
         {
           "id": 2,
-          "size": 30,
-          "price": 85000,
-          "available_doughs": [
+          "name": "bodring",
+          "prices": [
             {
-              "id": 1,
-              "name": "Thin",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee8973850f6b22b0c4794e47da3a18.jpg"
+              "sm": 25,
+              "price": 100
             },
             {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee897382fe407eb533708a14b5d5bc.jpg"
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
             }
-          ]
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611E9DBAEC6D04E13",
+          "createAt": "2025-05-14T10:04:08.529Z",
+          "updateAt": "2025-05-14T10:04:08.529Z"
         },
         {
           "id": 3,
-          "size": 35,
-          "price": 109000,
-          "available_doughs": [
+          "name": "shakarop",
+          "prices": [
             {
-              "id": 1,
-              "name": "Thin",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee897388a9334db76d014dde710c09.jpg"
+              "sm": 25,
+              "price": 100
             },
             {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee897386668d30b54141f74a7a7e35.jpg"
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
             }
-          ]
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611E9DBAED95FEBAA",
+          "createAt": "2025-05-14T10:04:08.941Z",
+          "updateAt": "2025-05-14T10:04:08.941Z"
+        },
+        {
+          "id": 4,
+          "name": "shakarop",
+          "prices": [
+            {
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
+            }
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611E9DBAED95FEBAA",
+          "createAt": "2025-05-14T10:04:08.941Z",
+          "updateAt": "2025-05-14T10:04:08.941Z"
+        },
+        {
+          "id": 5,
+          "name": "shakarop",
+          "prices": [
+            {
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
+            }
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611E9DBAED95FEBAA",
+          "createAt": "2025-05-14T10:04:08.941Z",
+          "updateAt": "2025-05-14T10:04:08.941Z"
+        },
+        {
+          "id": 6,
+          "name": "shakarop",
+          "prices": [
+            {
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
+            }
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611E9DBAED95FEBAA",
+          "createAt": "2025-05-14T10:04:08.941Z",
+          "updateAt": "2025-05-14T10:04:08.941Z"
+        },
+        {
+          "id": 7,
+          "name": "shakarop",
+          "prices": [
+            {
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
+            }
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611E9DBAED95FEBAA",
+          "createAt": "2025-05-14T10:04:08.941Z",
+          "updateAt": "2025-05-14T10:04:08.941Z"
+        },
+        {
+          "id": 8,
+          "name": "shakarop",
+          "prices": [
+            {
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
+            }
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611E9DBAED95FEBAA",
+          "createAt": "2025-05-14T10:04:08.941Z",
+          "updateAt": "2025-05-14T10:04:08.941Z"
+        },
+        {
+          "id": 9,
+          "name": "shakarop",
+          "prices": [
+            {
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
+            }
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611E9DBAED95FEBAA",
+          "createAt": "2025-05-14T10:04:08.941Z",
+          "updateAt": "2025-05-14T10:04:08.941Z"
+        },
+        {
+          "id": 10,
+          "name": "shakarop",
+          "prices": [
+            {
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
+            }
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611E9DBAED95FEBAA",
+          "createAt": "2025-05-14T10:04:08.941Z",
+          "updateAt": "2025-05-14T10:04:08.941Z"
+        },
+        {
+          "id": 11,
+          "name": "shakarop",
+          "prices": [
+            {
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
+            }
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611E9DBAED95FEBAA",
+          "createAt": "2025-05-14T10:04:08.941Z",
+          "updateAt": "2025-05-14T10:04:08.941Z"
+        },
+        {
+          "id": 12,
+          "name": "shakarop",
+          "prices": [
+            {
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
+            }
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611E9DBAED95FEBAA",
+          "createAt": "2025-05-14T10:04:08.941Z",
+          "updateAt": "2025-05-14T10:04:08.941Z"
         }
       ]
     },
@@ -72,52 +329,98 @@
       "price": 49000,
       "variants": [
         {
+          "id": 5,
+          "type": "thin",
+          "weight": 120,
+          "sm": 25,
+          "price": 100,
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/11ee89722dc352ae93b8f7612073baf6.jpg",
+          "createAt": "Wed May 14 2025 15:05:33 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:33 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 6,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 25,
+          "price": 100,
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/11ee89722dc352ae93b8f7612073baf6.jpg",
+          "createAt": "Wed May 14 2025 15:05:41 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:41 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 7,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 30,
+          "price": 100,
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/11ee89722dc352ae93b8f7612073baf6.jpg",
+          "createAt": "Wed May 14 2025 15:05:50 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:50 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 8,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 35,
+          "price": 100,
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/11ee89722dc352ae93b8f7612073baf6.jpg",
+          "createAt": "Wed May 14 2025 15:05:56 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:56 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 9,
+          "type": "thin",
+          "weight": 120,
+          "sm": 30,
+          "price": 100,
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/11ee89722dc352ae93b8f7612073baf6.jpg",
+          "createAt": "Wed May 14 2025 15:06:05 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:06:05 GMT+0500 (Uzbekistan Standard Time)"
+        }
+      ],
+      "toppings": [
+        {
           "id": 1,
-          "size": 25,
-          "price": 49000,
-          "available_doughs": [
-            { "id": 1, "name": "Thin", "image": "" },
+          "name": "cheese",
+          "prices": [
             {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee89722dc352ae93b8f7612073baf6.jpg"
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
             }
-          ]
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611EA0840DB86284E",
+          "createAt": "2025-05-14T10:04:06.087Z",
+          "updateAt": "2025-05-14T10:04:06.087Z"
         },
         {
           "id": 2,
-          "size": 30,
-          "price": 69000,
-          "available_doughs": [
+          "name": "bodring",
+          "prices": [
             {
-              "id": 1,
-              "name": "Thin",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee897230375d668201a946944cf41d.jpg"
+              "sm": 25,
+              "price": 100
             },
             {
-              "id": 3,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee89722ed2d2f992155a94fa4d383a.jpg"
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "size": 35,
-          "price": 89000,
-          "image": "https://media.dodostatic.net/image/r:292x292/01945f8b4f7b71a5ac7841a8dcf368a0.jpg",
-          "available_doughs": [
-            {
-              "id": 1,
-              "name": "Thin",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee897233133b1ca7aa3c98fa0b31df.jpg"
+              "sm": 30,
+              "price": 200
             },
             {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee897231b9262faccaa9824493a504.jpg"
+              "sm": 35,
+              "price": 300
             }
-          ]
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611E9DBAEC6D04E13",
+          "createAt": "2025-05-14T10:04:08.529Z",
+          "updateAt": "2025-05-14T10:04:08.529Z"
         }
       ]
     },
@@ -133,51 +436,98 @@
       "dis_available_toppings": [],
       "variants": [
         {
+          "id": 5,
+          "type": "thin",
+          "weight": 120,
+          "sm": 25,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:33 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:33 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 6,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 25,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:41 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:41 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 7,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 30,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:50 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:50 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 8,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 35,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:56 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:56 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 9,
+          "type": "thin",
+          "weight": 120,
+          "sm": 30,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:06:05 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:06:05 GMT+0500 (Uzbekistan Standard Time)"
+        }
+      ],
+      "toppings": [
+        {
           "id": 1,
-          "size": 25,
-          "price": 55000,
-          "available_doughs": [
-            { "id": 1, "name": "Thin", "image": "" },
+          "name": "cheese",
+          "prices": [
             {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/0193b01fa585796b883f673dec754096.jpg"
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
             }
-          ]
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611EA0840DB86284E",
+          "createAt": "2025-05-14T10:04:06.087Z",
+          "updateAt": "2025-05-14T10:04:06.087Z"
         },
         {
           "id": 2,
-          "size": 30,
-          "price": 65000,
-          "available_doughs": [
+          "name": "bodring",
+          "prices": [
             {
-              "id": 1,
-              "name": "Thin",
-              "image": "https://media.dodostatic.net/image/r:292x292/0193b01fcbcd71d8bdf6e85760efc49a.jpg"
+              "sm": 25,
+              "price": 100
             },
             {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/0193b01fbbe7704ba559683215e47c17.jpg"
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "size": 35,
-          "price": 75000,
-          "available_doughs": [
-            {
-              "id": 1,
-              "name": "Thin",
-              "image": "https://media.dodostatic.net/image/r:292x292/0193b0200bc07304a9e2268a86b45c97.jpg"
+              "sm": 30,
+              "price": 200
             },
             {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/0193b01ff3a47131bfb12f9041958702.jpg"
+              "sm": 35,
+              "price": 300
             }
-          ]
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611E9DBAEC6D04E13",
+          "createAt": "2025-05-14T10:04:08.529Z",
+          "updateAt": "2025-05-14T10:04:08.529Z"
         }
       ]
     },
@@ -193,51 +543,98 @@
       "dis_available_toppings": [],
       "variants": [
         {
+          "id": 5,
+          "type": "thin",
+          "weight": 120,
+          "sm": 25,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:33 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:33 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 6,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 25,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:41 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:41 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 7,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 30,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:50 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:50 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 8,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 35,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:56 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:56 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 9,
+          "type": "thin",
+          "weight": 120,
+          "sm": 30,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:06:05 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:06:05 GMT+0500 (Uzbekistan Standard Time)"
+        }
+      ],
+      "toppings": [
+        {
           "id": 1,
-          "size": 25,
-          "price": 48000,
-          "available_doughs": [
-            { "id": 1, "name": "Thin", "image": "" },
+          "name": "cheese",
+          "prices": [
             {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee8974c66bddabb6c0cbec7db04ef5.jpg"
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
             }
-          ]
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611EA0840DB86284E",
+          "createAt": "2025-05-14T10:04:06.087Z",
+          "updateAt": "2025-05-14T10:04:06.087Z"
         },
         {
           "id": 2,
-          "size": 30,
-          "price": 58000,
-          "available_doughs": [
+          "name": "bodring",
+          "prices": [
             {
-              "id": 1,
-              "name": "Thin",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee8974cad58853a78935f1c7c6dd63.jpg"
+              "sm": 25,
+              "price": 100
             },
             {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee8974c91f2ed3aa9a78498ae85662.jpg"
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "size": 35,
-          "price": 68000,
-          "available_doughs": [
-            {
-              "id": 1,
-              "name": "Thin",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee8974ce2a2ba79643dde1944ebbf3.jpg"
+              "sm": 30,
+              "price": 200
             },
             {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee8974cc97c974a17a33cadb70ae16.jpg"
+              "sm": 35,
+              "price": 300
             }
-          ]
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611E9DBAEC6D04E13",
+          "createAt": "2025-05-14T10:04:08.529Z",
+          "updateAt": "2025-05-14T10:04:08.529Z"
         }
       ]
     },
@@ -256,51 +653,98 @@
       ],
       "variants": [
         {
+          "id": 5,
+          "type": "thin",
+          "weight": 120,
+          "sm": 25,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:33 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:33 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 6,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 25,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:41 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:41 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 7,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 30,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:50 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:50 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 8,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 35,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:56 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:56 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 9,
+          "type": "thin",
+          "weight": 120,
+          "sm": 30,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:06:05 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:06:05 GMT+0500 (Uzbekistan Standard Time)"
+        }
+      ],
+      "toppings": [
+        {
           "id": 1,
-          "size": 25,
-          "price": 52000,
-          "available_doughs": [
-            { "id": 1, "name": "Thin", "image": "" },
+          "name": "cheese",
+          "prices": [
             {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11eed73a8a2d47fbbea2536bf04f9889.jpg"
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
             }
-          ]
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611EA0840DB86284E",
+          "createAt": "2025-05-14T10:04:06.087Z",
+          "updateAt": "2025-05-14T10:04:06.087Z"
         },
         {
           "id": 2,
-          "size": 30,
-          "price": 62000,
-          "available_doughs": [
+          "name": "bodring",
+          "prices": [
             {
-              "id": 1,
-              "name": "Thin",
-              "image": "https://media.dodostatic.net/image/r:292x292/11eed73a90f20f21a1ff66992a164af7.jpg"
+              "sm": 25,
+              "price": 100
             },
             {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11eed73a8d98e91c8df6c1ede2609b92.jpg"
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "size": 35,
-          "price": 72000,
-          "available_doughs": [
-            {
-              "id": 1,
-              "name": "Thin",
-              "image": "https://media.dodostatic.net/image/r:292x292/11eed73a95467d6e8a4233a151fc1399.jpg"
+              "sm": 30,
+              "price": 200
             },
             {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11eed73a936115e290fc71635c142588.jpg"
+              "sm": 35,
+              "price": 300
             }
-          ]
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611E9DBAEC6D04E13",
+          "createAt": "2025-05-14T10:04:08.529Z",
+          "updateAt": "2025-05-14T10:04:08.529Z"
         }
       ]
     },
@@ -322,53 +766,98 @@
       ],
       "variants": [
         {
-          "id": 601,
-          "size": 25,
-          "price": 69000,
-          "available_doughs": [
-            { "id": 1, "name": "Thin", "iamge": "" },
-            {
-              "id": 2,
-              "name": "Traditional",
-              "iamge": "https://media.dodostatic.net/image/r:292x292/11ee7d624725b0c3b94943e95d36b274.jpg"
-            }
-          ]
+          "id": 5,
+          "type": "thin",
+          "weight": 120,
+          "sm": 25,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:33 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:33 GMT+0500 (Uzbekistan Standard Time)"
         },
         {
-          "id": 602,
-          "size": 30,
-          "price": 66000,
-
-          "available_doughs": [
-            {
-              "id": 1,
-              "name": "Thin",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee7d62491714b9a7e938de8f53f812.jpg"
-            },
-            {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee7d6247650fab9bc0fba7e5e31424.jpg"
-            }
-          ]
+          "id": 6,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 25,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:41 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:41 GMT+0500 (Uzbekistan Standard Time)"
         },
         {
-          "id": 603,
-          "size": 35,
-          "price": 76000,
-
-          "available_doughs": [
+          "id": 7,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 30,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:50 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:50 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 8,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 35,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:56 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:56 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 9,
+          "type": "thin",
+          "weight": 120,
+          "sm": 30,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:06:05 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:06:05 GMT+0500 (Uzbekistan Standard Time)"
+        }
+      ],
+      "toppings": [
+        {
+          "id": 1,
+          "name": "cheese",
+          "prices": [
             {
-              "id": 1,
-              "name": "Thin",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee7d6249e732a08d384d7924108294.jpg"
+              "sm": 25,
+              "price": 100
             },
             {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee7d6249a7dfd5b058abebd0409c97.jpg"
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
             }
-          ]
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611EA0840DB86284E",
+          "createAt": "2025-05-14T10:04:06.087Z",
+          "updateAt": "2025-05-14T10:04:06.087Z"
+        },
+        {
+          "id": 2,
+          "name": "bodring",
+          "prices": [
+            {
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
+            }
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611E9DBAEC6D04E13",
+          "createAt": "2025-05-14T10:04:08.529Z",
+          "updateAt": "2025-05-14T10:04:08.529Z"
         }
       ]
     },
@@ -387,51 +876,98 @@
       ],
       "variants": [
         {
-          "id": 701,
-          "size": 25,
-          "price": 58000,
-          "available_doughs": [
-            { "id": 1, "name": "Thin", "image": "" },
-            {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee7d62644f8fda8012e711c7895ff8.jpg"
-            }
-          ]
+          "id": 5,
+          "type": "thin",
+          "weight": 120,
+          "sm": 25,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:33 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:33 GMT+0500 (Uzbekistan Standard Time)"
         },
         {
-          "id": 702,
-          "size": 30,
-          "price": 68000,
-          "available_doughs": [
-            {
-              "id": 1,
-              "name": "Thin",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee7d6264ca9454acc667626539e20c.jpg"
-            },
-            {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee7d6264845c8fb0b7e3bcfca7b15e.jpg"
-            }
-          ]
+          "id": 6,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 25,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:41 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:41 GMT+0500 (Uzbekistan Standard Time)"
         },
         {
-          "id": 703,
-          "size": 35,
-          "price": 78000,
-          "available_doughs": [
+          "id": 7,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 30,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:50 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:50 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 8,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 35,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:56 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:56 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 9,
+          "type": "thin",
+          "weight": 120,
+          "sm": 30,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:06:05 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:06:05 GMT+0500 (Uzbekistan Standard Time)"
+        }
+      ],
+      "toppings": [
+        {
+          "id": 1,
+          "name": "cheese",
+          "prices": [
             {
-              "id": 1,
-              "name": "Thin",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee7d62652f21b997a39cc32060b92b.jpg"
+              "sm": 25,
+              "price": 100
             },
             {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee7d6264fcb54a95a03014090c0ec8.jpg"
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
             }
-          ]
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611EA0840DB86284E",
+          "createAt": "2025-05-14T10:04:06.087Z",
+          "updateAt": "2025-05-14T10:04:06.087Z"
+        },
+        {
+          "id": 2,
+          "name": "bodring",
+          "prices": [
+            {
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
+            }
+          ],
+          "imageUrl": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A219740A95611E9DBAEC6D04E13",
+          "createAt": "2025-05-14T10:04:08.529Z",
+          "updateAt": "2025-05-14T10:04:08.529Z"
         }
       ]
     },
@@ -451,51 +987,119 @@
       ],
       "variants": [
         {
-          "id": 801,
-          "size": 25,
-          "price": 62000,
-          "available_doughs": [
-            { "id": 1, "name": "Thin", "image": "" },
-            {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee89753415d95584d2759b4f2c2ccd.jpg"
-            }
-          ]
+          "id": 5,
+          "type": "thin",
+          "weight": 120,
+          "sm": 25,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:33 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:33 GMT+0500 (Uzbekistan Standard Time)"
         },
         {
-          "id": 802,
-          "size": 30,
-          "price": 72000,
-          "available_doughs": [
-            {
-              "id": 1,
-              "name": "Thin",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee89753800507aaec9481abef7143e.jpg"
-            },
-            {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee897535fa1abeb1c3330d305cde4c.jpg"
-            }
-          ]
+          "id": 6,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 25,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:41 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:41 GMT+0500 (Uzbekistan Standard Time)"
         },
         {
-          "id": 803,
-          "size": 35,
-          "price": 82000,
-          "available_doughs": [
+          "id": 7,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 30,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:50 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:50 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 8,
+          "type": "traditional",
+          "weight": 120,
+          "sm": 35,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:05:56 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:05:56 GMT+0500 (Uzbekistan Standard Time)"
+        },
+        {
+          "id": 9,
+          "type": "thin",
+          "weight": 120,
+          "sm": 30,
+          "price": 100,
+          "imageUrl": "string",
+          "createAt": "Wed May 14 2025 15:06:05 GMT+0500 (Uzbekistan Standard Time)",
+          "updateAt": "Wed May 14 2025 15:06:05 GMT+0500 (Uzbekistan Standard Time)"
+        }
+      ],
+      "toppings": [
+        {
+          "id": 1,
+          "name": "dqwdqwdqwf",
+          "prices": [
             {
-              "id": 1,
-              "name": "Thin",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee89753a205803be6627a40ccdf012.jpg"
+              "sm": 25,
+              "price": 100
             },
             {
-              "id": 2,
-              "name": "Traditional",
-              "image": "https://media.dodostatic.net/image/r:292x292/11ee89753bd6e6c9b61c0f546ecf4701.jpg"
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
             }
-          ]
+          ],
+          "imageUrl": "",
+          "createAt": "2025-05-14T10:04:06.087Z",
+          "updateAt": "2025-05-14T10:04:06.087Z"
+        },
+        {
+          "id": 2,
+          "name": "stridqwdqng",
+          "prices": [
+            {
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
+            }
+          ],
+          "imageUrl": "",
+          "createAt": "2025-05-14T10:04:08.529Z",
+          "updateAt": "2025-05-14T10:04:08.529Z"
+        },
+        {
+          "id": 3,
+          "name": "dawd",
+          "prices": [
+            {
+              "sm": 25,
+              "price": 100
+            },
+            {
+              "sm": 30,
+              "price": 200
+            },
+            {
+              "sm": 35,
+              "price": 300
+            }
+          ],
+          "imageUrl": "",
+          "createAt": "2025-05-14T10:04:08.941Z",
+          "updateAt": "2025-05-14T10:04:08.941Z"
         }
       ]
     }
@@ -518,7 +1122,7 @@
           "size": "Big",
           "weight": null,
           "price": 35000,
-          "url": "https://media.dodostatic.net/image/r:292x292/0194f53f0ecb71a9b7f077b6772157da.jpg"
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/0194f53f0ecb71a9b7f077b6772157da.jpg"
         }
       ]
     },
@@ -538,14 +1142,14 @@
           "size": "Standard",
           "weight": 105,
           "price": 19000,
-          "url": "https://media.dodostatic.net/image/r:292x292/0195c2946c8a7974b167f872bc61a084.jpg"
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/0195c2946c8a7974b167f872bc61a084.jpg"
         },
         {
           "id": 2,
           "size": "Big",
           "weight": 180,
           "price": 28000,
-          "url": "https://media.dodostatic.net/image/r:292x292/0195c2948f7c77d485e5b94d49b1443a.jpg"
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/0195c2948f7c77d485e5b94d49b1443a.jpg"
         }
       ]
     },
@@ -565,7 +1169,7 @@
           "size": "1 pc",
           "weight": null,
           "price": 29000,
-          "url": "https://media.dodostatic.net/image/r:292x292/11eed74f9e684d30b1ac51e4eb470c07.jpg"
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/11eed74f9e684d30b1ac51e4eb470c07.jpg"
         }
       ]
     },
@@ -585,14 +1189,14 @@
           "size": "Standard",
           "weight": null,
           "price": 19000,
-          "url": "https://media.dodostatic.net/image/r:292x292/11ee7d628495deb78b19fc57bd43e6fe.jpg"
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/11ee7d628495deb78b19fc57bd43e6fe.jpg"
         },
         {
           "id": 2,
-          "size": "Big",
-          "weight": null,
-          "price": 28000,
-          "url": "https://media.dodostatic.net/image/r:292x292/11ee7d6284b5b398a1db11efc608defc.jpg"
+          "size": "Standard",
+          "weight": 0,
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/11ee7d628495deb78b19fc57bd43e6fe.jpg",
+          "price": 0
         }
       ]
     },
@@ -612,21 +1216,21 @@
           "size": "Кичкина",
           "weight": null,
           "price": 19000,
-          "url": "https://media.dodostatic.net/image/r:292x292/11ef9836cbdbe54aa2b65ec43a889379.jpg"
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/11ef9836cbdbe54aa2b65ec43a889379.jpg"
         },
         {
           "id": 2,
           "size": "Standard",
           "weight": null,
           "price": 29000,
-          "url": "https://media.dodostatic.net/image/r:292x292/11ef498b56f4a7629caa90b5ddc7864c.jpg"
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/11ef498b56f4a7629caa90b5ddc7864c.jpg"
         },
         {
           "id": 3,
           "size": "Big",
           "weight": null,
           "price": 28000,
-          "url": "https://media.dodostatic.net/image/r:292x292/0196327ffb8a7345a01189351f97c5ce.jpg"
+          "imageUrl": "https://media.dodostatic.net/image/r:292x292/0196327ffb8a7345a01189351f97c5ce.jpg"
         }
       ]
     }

@@ -3,27 +3,27 @@
 import { request } from "@/api";
 import Deserts from "@/components/deserts";
 import Pizzas from "@/components/pizzas";
-import { Button } from "@/components/ui/button";
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "@/components/ui/drawer";
-import { Deserts__data, Pizzas__data } from "@/types";
+import Snacks from "@/components/snacks";
+import { Deserts__data, BackendPizza, SnacksData, BackendBaseData } from "@/types";
+import { getAccessToken, getLogtoContext } from "@logto/next/server-actions";
 import { useQuery } from "@tanstack/react-query";
+import { logtoConfig } from "./logto";
+import SignOut from "./sign-out";
+import SignIn from "./sign-in";
+import { handleSignIn, handleSignOut } from "@/actions/auth";
+import GetAccessToken from "./get-acces-token";
+import { useEffect, useState } from "react";
+import { handleGetAccessToken } from "@/lib/actions";
+import OrderButton from "@/lib/orderButton";
+import Link from "next/link";
 
 export default function Home() {
-  const { data } = useQuery<Pizzas__data[]>({
+  const { data } = useQuery<BackendPizza[]>({
     queryKey: ["pizzas"],
     queryFn: () => request.get("pizzas").then((res) => res.data),
   });
 
-  const { data: data__snacks } = useQuery<Pizzas__data[]>({
+  const { data: data__snacks } = useQuery<SnacksData[]>({
     queryKey: ["snacks__key"],
     queryFn: () => request.get("snacks").then((res) => res.data),
   });
@@ -53,10 +53,49 @@ export default function Home() {
     queryFn: () => request.get("sauces").then((res) => res.data),
   });
 
+  // const { isAuthenticated, claims } = await getLogtoContext(logtoConfig);
+
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
+  const [userInfo, setUserInfo] = useState<any>(null);
+
+  useEffect(() => {
+    const fetchContext = async () => {
+      try {
+        const res = await fetch('/api/auth/context');
+        const data = await res.json();
+        
+        setIsAuthenticated(data.isAuthenticated);
+        setUserInfo(data.claims);
+      } catch (error) {
+        console.error('Auth context error:', error);
+      }
+    };
+
+    fetchContext();
+  }, []);
+
+  if (isAuthenticated === null) return <div>Loading...</div>;
+
+  console.log(isAuthenticated , 'isAuthenticated');
+  
+
   return (
     <>
       <div>
-        <div className=" m-[15px] ">
+
+
+      {isAuthenticated ? (
+          <SignOut
+            onSignOut={handleSignOut}
+          />
+        ) : (
+          <SignIn
+            onSignIn={handleSignIn}
+          />
+        )}
+      <GetAccessToken onGetAccessToken={handleGetAccessToken} />
+
+        <div className="m-[15px] mt-[20px]">
           <div className="flex justify-between border-1 border-[#e0e0e0] px-[15px] py-[12px] font-medium rounded-[12px] gap-[20px] items-center text-[15px] cursor-pointer ">
             <div>
               <h4 className="font-bold">Pork free</h4>
@@ -71,7 +110,7 @@ export default function Home() {
           </div>
         </div>
         <Pizzas name="Pizza" data={data} />
-        <Pizzas name="Snacks" data={data__snacks} />
+        <Snacks name="Snacks" data={data__snacks} />
         <Deserts name="Deserts" data={data__deserts} />
         <Deserts name="Drinks" data={data__drinks} />
         <Deserts name="Coffee" data={data__coffee} />

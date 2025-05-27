@@ -1,38 +1,38 @@
 "use client";
 
 import React from "react";
-import { BackendPizza } from "@/types";
+import { SnacksData } from "@/types";
 import { Button } from "./ui/button";
 import { Pepper__icon, Vegetarian__icon } from "../../public/icons";
 import { Dialog, DialogContent, DialogTitle } from "./ui/dialog";
 import { Drawer, DrawerContent } from "./ui/drawer";
 import { useMediaQuery } from "usehooks-ts";
-import PizzaDetailModal from "./modals/modal_pizza";
+import SnacksDetailModal from "./modals/snacks_modal";
 
 type UserListProps = {
-  data: BackendPizza[] | undefined;
+  data: SnacksData[] | undefined;
   name: string;
 };
 
-const Pizzas = ({ data, name }: UserListProps) => {
+const Snacks = ({ data, name }: UserListProps) => {
   const [open, setOpen] = React.useState(false);
-  const [selectedItem, setSelectedItem] = React.useState<BackendPizza | null>(
+  const [selectedItem, setSelectedItem] = React.useState<SnacksData | null>(
     null
   );
   const isDesktop = useMediaQuery("(min-width: 1024px)");
 
-  const handleItemClick = (item: BackendPizza) => {
+  const handleItemClick = (item: SnacksData | null) => {
     setSelectedItem(item);
     setOpen(true);
   };
-
+  
   return (
     <div>
       <h2 className="text-[24px] px-[10px] pt-[24px] pb-[8px] my-[32px] leading-[28px] font-medium lg:text-[36px]">
         {name}
       </h2>
       <ul className="px-[16px] grid lg:grid-cols-4 lg:gap-x-[30px] lg:gap-y-[60px] xl:gap-x-[38px] cursor-pointer">
-        {data?.map((item: BackendPizza) => (
+        {data?.map((item: SnacksData) => (
           <li
             className={`flex items-center justify-left py-[16px] gap-[8px] relative pb-[50px] lg:flex-col lg:gap-0 ${
               item.id != 1 && "border-t-[0.3px] lg:border-0 "
@@ -96,25 +96,15 @@ const Pizzas = ({ data, name }: UserListProps) => {
           {isDesktop ? (
             <Dialog open={open} onOpenChange={setOpen}>
               <DialogContent className="sm:max-w-[924px] h-[95vh] overflow-y-auto">
-                <DialogTitle className="hidden">Item Details</DialogTitle>
-                {selectedItem && (
-                  <PizzaDetailModal
-                    selectedItem={selectedItem}
-                    onClose={() => setSelectedItem(null)} 
-                  />
-                )}
+                <DialogTitle className="sr-only">Item Details</DialogTitle>
+                  {selectedItem && <SnacksDetailModal selectedItem={selectedItem} onClose={() => setSelectedItem(null)}/>}
               </DialogContent>
             </Dialog>
           ) : (
             <Drawer open={open} onOpenChange={setOpen}>
               <DrawerContent className="">
                 <div className="px-4 overflow-y-auto flex-1">
-                  {selectedItem && (
-                    <PizzaDetailModal
-                      selectedItem={selectedItem}
-                      onClose={() => setSelectedItem(null)}
-                    />
-                  )}
+                  {selectedItem && <SnacksDetailModal selectedItem={selectedItem} onClose={() => setSelectedItem(null)}/>}
                 </div>
               </DrawerContent>
             </Drawer>
@@ -124,4 +114,4 @@ const Pizzas = ({ data, name }: UserListProps) => {
   );
 };
 
-export default Pizzas;
+export default Snacks;

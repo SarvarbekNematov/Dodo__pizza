@@ -47,5 +47,11 @@ const Vegetarian__icon = () => (
 const Pepper__icon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="none" viewBox="0 0 16 16"><path fill="#FF6262" fillRule="evenodd" d="M11.945 3.89c.12-.403.715-.685 1.49-.553.278.048.565-.144.565-.426v-.514A.397.397 0 0 0 13.603 2h-.207c-1.694 0-2.465.657-2.68 1.847a.28.28 0 0 1-.291.235c-.284-.02-.76-.052-1.206-.076a15 15 0 0 0-.361-.035c-1.48-.127-2.56 1.208-2.726 2.683-.41 3.64-2.38 4.921-3.415 5.348-.366.15-.668.47-.712.864-.044.402.191.78.585.872.53.123 1.35.262 2.357.262 4.472 0 8.578-1.867 9.015-7.02.05-.605-.14-1.21-.625-1.574a5 5 0 0 0-.476-.315V5.09c-.7-.391-1.063-.701-.916-1.199M7.622 5.415c-.788.923.19 1.524.905.685.804-.942-.169-1.547-.905-.685" clipRule="evenodd" /></svg>
 )
-
-export { World__icon, LogoIcon , DodoCoinIcon , Vegetarian__icon , Pepper__icon};
+const ModalDown = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} fill="none" viewBox="0 0 32 32"><path fill="#000" fillRule="evenodd" d="M27.925 11.16a1.25 1.25 0 0 0-1.766-.085l-10.16 9.236-10.158-9.236a1.25 1.25 0 1 0-1.682 1.85l10.462 9.511.017.016c.079.072.184.167.285.246.12.093.31.223.568.301.332.101.686.101 1.018 0 .258-.078.447-.208.568-.301.1-.079.205-.174.284-.246l.018-.016 10.461-9.511a1.25 1.25 0 0 0 .085-1.766" clipRule="evenodd" /></svg>
+)
+const Pizza__bg_img = ({w , h}: any) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width={w} height={h} fill="none" viewBox="0 0 382 382"><circle cx={191} cy={191} r={190} stroke="#6F6E6F" strokeDasharray="1 6.1" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0.6" /></svg>
+)
+ 
+export { World__icon, LogoIcon , DodoCoinIcon , Vegetarian__icon , Pepper__icon , ModalDown , Pizza__bg_img};

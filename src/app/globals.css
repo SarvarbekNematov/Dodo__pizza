@@ -3,7 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 @theme {
-    
+
 }
 
 @theme inline {
@@ -124,6 +124,14 @@
   }
 }
 
-h1 , h2 , h3 , h4 , h5 , h6 , p {
-  font-family: 'CustomFont';
+@font-face {
+  font-family: "MyFont";
+  src: url("/fonts/MyFont.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+h2 , h3 , h4 , h5 , h6 , button {
+  font-family: 'MyFont' , sans-serif;
 }
