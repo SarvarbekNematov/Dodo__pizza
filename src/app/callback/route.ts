@@ -1,3 +1,5 @@
+'use server';
+
 import { handleSignIn } from '@logto/next/server-actions'
 import { redirect } from 'next/navigation'
 import { NextRequest } from 'next/server'
