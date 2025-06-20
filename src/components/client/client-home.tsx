@@ -4,6 +4,7 @@ import { useQueries } from '@/hooks/use-queries'
 import Pizzas from '@/components/pizzas'
 import Snacks from '@/components/snacks'
 import Deserts from '@/components/deserts'
+import Deliverys from '../deliverys'
 
 export default function ClientHome() {
   const {
@@ -51,6 +52,7 @@ export default function ClientHome() {
       <Deserts name="Coffee" data={coffeeQuery.data} />
       <Deserts name="Milkshakes" data={milkshakesQuery.data} />
       <Deserts name="Sauces" data={saucesQuery.data} />
+      <Deliverys/>
     </div>
   )
 } 

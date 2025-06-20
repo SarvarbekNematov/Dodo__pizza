@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased p-[10px]`}>
+      <body className={`antialiased`}>
         <Providers>
           <div className="max-w-[1320px] mx-auto">
             <div className="hidden md:block">
@@ -26,10 +26,10 @@ export default function RootLayout({
               <Navbar />
             </div>
             <div>{children}</div>
-            <div>
+          </div>
+            <div className="bg-black">
               <Footer />
             </div>
-          </div>
         </Providers>
       </body>
     </html>

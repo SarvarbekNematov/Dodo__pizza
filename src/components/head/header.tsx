@@ -2,14 +2,14 @@
 
 import { DodoCoinIcon, LogoIcon } from "../../../public/icons";
 import Menu__mobile from "./menu__mobile";
-import SignOut from "@/app/sign-out";
 import SignIn from "@/app/sign-in";
-import { handleSignIn, handleSignOut } from "@/actions/auth";
+import { handleSignIn } from "@/actions/auth";
 import { handleGetAccessToken } from "@/lib/actions";
-import { request, saveUserInfo } from "@/api";
+import { request } from "@/api";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 import "./head.css";
-import { useEffect, useState } from "react";
 
 interface UserInfo {
   email?: string;
@@ -21,54 +21,21 @@ interface UserInfo {
 const Header = () => {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
   const [userInfo, setUserInfo] = useState<UserInfo | null>(null);
-  useEffect(() => {
-
-  },[])
+  const [open, setOpen] = useState(false);
+  const router = useRouter();
   const fetchUserInfo = async () => {
-    // try {
-    //   const res = await fetch("/api/auth/context");
-    //   const data = await res.json();
-      
-    //   // console.log("=== DEBUG INFO START ===");
-    //   // console.log("Raw response data:", data);
-      
-    //   // if (data.claims) {
-    //   //   console.log("All claims:", data.claims);
-    //   //   console.log("Username:", data.claims.username);
-    //   //   console.log("Name:", data.claims.name);
-    //   //   console.log("Email:", data.claims.email);
-    //   //   console.log("Preferred username:", data.claims.preferred_username);
-    //   //   console.log("Subject:", data.claims.sub);
-    //   // }
-      
-    //   // console.log("=== DEBUG INFO END ===");
-
-    //   if (data.isAuthenticated && data.claims) {
-    //     // Barcha mumkin bo'lgan maydonlarni tekshiramiz
-    //     const userInfo = {
-    //       email: data.claims.email || 
-    //              data.claims.preferred_username || 
-    //              data.claims.username ||
-    //              data.claims['https://auth.logto.io/email'] || '',
-    //       name: data.claims.name || 
-    //             data.claims.nickname || 
-    //             data.claims.name || 
-    //             data.claims.preferred_username ||
-    //             data.claims['https://auth.logto.io/username'] || '',
-    //       sub: data.claims.sub || '',
-    //       isAuthenticated: true
-    //     };
-        
-    //     // console.log("Processed user info:", userInfo);
-        
-    //     setUserInfo(userInfo);
-    //     saveUserInfo(userInfo);
-    //   }
-      
-    //   setIsAuthenticated(data.isAuthenticated);
-    // } catch (error) {
-    //   console.error("Auth context error:", error);
-    // }
+    try {
+      // localStorage-dan tokenni olish
+      const token = localStorage.getItem('access_token');
+      if (token) {
+        setIsAuthenticated(true);
+      } else {
+        setIsAuthenticated(false);
+      }
+    } catch (error) {
+      console.error('Token tekshirishda xatolik:', error);
+      setIsAuthenticated(false);
+    }
   };
 
   useEffect(() => {
@@ -76,6 +43,18 @@ const Header = () => {
       await fetchUserInfo();
     };
 
+  }, []);
+
+  useEffect(() => {
+    const handleStorageChange = (event: StorageEvent) => {
+      if (event.key === 'access_token') {
+        fetchUserInfo();
+      }
+    };
+    window.addEventListener('storage', handleStorageChange);
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
   }, []);
 
   const GetAccessToken = ({ onGetAccessToken }: { onGetAccessToken: () => Promise<string> }) => {
@@ -105,7 +84,7 @@ const Header = () => {
     <div className="">
       <div className="flex justify-between md:px-[10px]">
         <div className="flex gap-[40px]">
-          <div className="w-[150px] h-[50px] md:w-[250px]">
+          <div onClick={() => router.push('/')} className="w-[150px] h-[50px] md:w-[250px]">
             <LogoIcon />
           </div>
           <div className="hidden pizza">
@@ -129,11 +108,16 @@ const Header = () => {
                 <div className="flex items-center gap-2">
                   {userInfo?.name && <span className="text-sm">Hello, {userInfo.name}!</span>}
                   {userInfo?.email && <span className="text-sm text-gray-600">({userInfo.email})</span>}
-                  <SignOut onSignOut={handleSignOut} />
+                  <button
+                    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                    onClick={() => router.push('/profile')}
+                  >
+                    Profile
+                  </button>
                 </div>
               </>
             ) : (
-              <SignIn onSignIn={handleSignIn} />
+              <SignIn onSignIn={handleSignIn} setOpen={setOpen} />
             )}
           </div>
           <div className="flex items-center md:hidden">

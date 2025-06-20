@@ -40,7 +40,7 @@ const SignOut = ({ onSignOut }: SignOutProps) => {
       onClick={handleClick}
       className="bg-[#ff6900] text-white px-4 py-2 rounded-lg hover:bg-[#ff8124] transition-colors"
     >
-      Sign Out
+      Chiqish
     </button>
   );
 };
